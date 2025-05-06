@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: whatsapp-gpt-bot
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    plan: free
+    envVars:
+      - key: WHATSAPP_TOKEN
+        value: EAAJ2ZA2ZBiOWcBO4jQsO6Y9DiZBkGoN27hUtvxEu7qFVRFSMKvxOt4soTytuDp5XzetIQGTPxqoxs0VdUytwUq5uGh1QXpp2t1G1KPVcIEmqS7xI6WgbADeXRi4RYplkJk9l82nfUlzpzzEMZAr1IXyDaKQjbL4JYfDkilSojWdKRSxPQNHqTc69tm2R1XPZAzs9d9ieHmmnurdwuiQW03DKVPDYZD
+      - key: OPENAI_API_KEY
+        value: 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
+      - key: VERIFY_TOKEN
+        value: mywhatsappbot
+      - key: PHONE_NUMBER_ID
+        value: 591484650721893
